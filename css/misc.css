@@ -83,13 +83,13 @@ h2 {
 }
 
 .sc {
-    margin-bottom: 17px;
-    width: 120px;
+    margin-bottom: 50px;
+    width: 150px;
 }
 
 .th {
-    margin-bottom: 25px;
-    width: 80px;
+    margin-bottom: 10px;
+    width: 200px;
 }
 
 .best-selling {
@@ -99,6 +99,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 34px;
 }
 
 .best {

@@ -7,7 +7,7 @@
     <title>MediCare</title>
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/styleLogin.css">
+    <link rel="stylesheet" href="css/cosmetics.css">
     <link href="https://fonts.googleapis.com/css2?family=Luxurious+Script&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -56,24 +56,27 @@
     </header>
 
     <section class="home">
-        <div class="home-box">
-            <h1>Login</h1>
-            <form method="post" id="form">
-                <div class="txt-field">
-                    <input type="text" class="email" required>
-                    <span></span>
-                    <label>Email</label>
+        <div class="home-content">
+            <h1>Cosmetic</h1>
+            <p>Choose from a wide variety of cosmetics, made to spark the beauty inside you.</p>
+            <div class="boxes">
+                <div class="box-product one">
+                    <div class="best-selling"><p class="left best">Best Selling!</p></div>
+                    <img src="assets/cosmetic/16263.jpg" alt="nail-polish" class="box-img fr">
+                    <h2 class="left">MediCare Nail Polish</h2>
+                    <p class="left box-text">Choose from a wide variety of colors, guaranteed to last long and easily removable. <br>&nbsp</br.></p>
                 </div>
-                <div class="txt-field">
-                    <input type="password" class="password" required>
-                    <span></span>
-                    <label>Password</label>
+                <div class="box-product two">
+                    <img src="assets/cosmetic/Giordani Gold Iconic Lipstick SPF 15.png" alt="basil-oil" class="box-img sc">
+                    <h2 class="left">MediCare Lipstick</h2>
+                    <p class="left box-text">Highly pigmented lip color with a creamy smooth glide during application that leaves lips feeling hydrated, nurtured, and conditioned.</p>
                 </div>
-                <input type="submit" value="Login" class="login">
-                <div class="signup-link">
-                    Don't have an account yet? <a href="register.html" class="default">Register</a> now !
+                <div class="box-product three">
+                    <img src="assets/cosmetic/brush.jpg" alt="brush-set" class="box-img th">
+                    <h2 class="left">MediCare 12pcs Brush Set</h2>
+                    <p class="left box-text">Containing 12 high quality and durable make-up brushes. <br>&nbsp</p>
                 </div>
-            </form>
+            </div>
         </div>
     </section>
 
@@ -87,5 +90,4 @@
     </footer>
 </body>
 <script src="js/nav.js"></script>
-<script src="js/login.js"></script>
 </html>

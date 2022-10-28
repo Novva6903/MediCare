@@ -1,0 +1,138 @@
+* {
+    color: black;
+}
+
+.default {
+    text-decoration: underline;
+    color: #38abab;
+}
+
+body {
+    background-color: rgb(248, 248, 248);
+}
+
+.home {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.home-box {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgb(199, 199, 199);
+    transition: 0.4s;
+    padding: 0 40px;
+}
+
+h1 {
+    font-weight: 400;
+    margin: 40px 0;
+}
+
+.txt-field {
+    position: relative;
+    border-bottom: 2px solid #c9c9c9;
+    text-align: left;
+    margin: 30px 0;
+}
+
+.txt-field input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt-field label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #c9c9c9;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.txt-field span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #38abab;
+    transition: 0.5s;
+}
+
+.txt-field input:focus ~ label,
+.txt-field input:valid ~ label {
+    top: -5px;
+    color: #38abab;
+    font-size: 14px;
+}
+
+.txt-field input:focus ~ span::before,
+.txt-field input:valid ~ span::before {
+    width: 100%;
+}
+
+.login {
+    margin-top: 30px;
+    width: 50%;
+    height: 40px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1.5px solid #38abab;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.login:hover {
+    color: white;
+    background-color: #38abab;
+}
+
+.signup-link {
+    margin-top: 40px;
+    font-size: 12px;
+}
+
+@media(max-width: 600px) {
+    .home.active {
+        margin-top: 382px;
+    }
+
+    .home.activate {
+        margin-top: 448px;
+    }
+
+    .home-box {
+        width: 300px;
+        height: 300px;
+    }
+
+    h1 {
+        margin: 20px 0;
+    }
+
+    .txt-field {
+        margin: 20px 0;
+    }
+
+    .login {
+        margin-top: 20px;
+        height: 30px;
+    }
+
+    .signup-link {
+        margin-top: 20px;
+        font-size: 10px;
+    }
+}

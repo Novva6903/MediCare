@@ -1,0 +1,36 @@
+.footer {
+    margin-top: 2%;
+    text-align: center;
+}
+
+.social-media {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+.footer-link {
+    margin: 3% 1% 0;
+    transition: 0.3s;
+}
+
+.footer-img {
+    width: 30px;
+}
+
+.footer-img:hover {
+    opacity: 65%;
+}
+
+@media(max-width: 600px) {
+    .footer-img {
+        width: 20px;
+    }
+    
+    .footer p {
+        margin-top: 2%;
+        font-size: 10px;
+    }
+    
+}

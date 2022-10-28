@@ -1,0 +1,41 @@
+.home-content {
+    width: 100%;
+    height: 44.91vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/home.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+h1 {
+    font-size: 5vw;
+    font-weight: 400;
+}
+
+.home-content p {
+    font-weight: 300;
+    font-size: 1.7vw;
+}
+
+.home-btn {
+    width: 8%;
+    height: 6%;
+    background-color: #38abab;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.home-btn:hover {
+    background-color: #43c8c8;
+}
+
+.home-btn p {
+    font-size: 1.2vw;
+    color: white;
+}

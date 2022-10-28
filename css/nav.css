@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    top: 0;
+    box-shadow: 0px 1px 3px 1px rgb(172, 172, 172);
+    position: fixed;
+    z-index: 3;
+}
+
+li {
+    list-style: none;
+}
+
+a, .product {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.product {
+    transition: 0.1s;
+}
+
+.navbar {
+    width: 100vw;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    z-index: 1;
+}
+
+.nav-branding {
+    background-color: white;
+}
+
+.brand-icon {
+    width: 70%;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 60%;
+    margin-right: 2%;
+}
+
+.nav-item {
+    text-align: center;
+    margin: 0 15px;
+}
+
+.nav-link {
+    transition: 0.1s;
+}
+
+.nav-link:hover {
+    border-bottom: 3px solid #38abab;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    margin-right: 5%;
+}
+
+.hamburger-box {
+    font-size: 2rem;
+}
+
+.loginBtn {
+    background-color: #38abab;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 40px;
+    transition: 0.3s;
+}
+
+.loginBtn:hover {
+    opacity: 65%;
+}
+
+.white {
+    color: white;
+}
+
+.white:hover {
+    border-bottom: none;
+}
+
+.drop-down {
+    margin-left: -19px;
+    margin-top: -0.5px;
+    position: fixed;
+    text-align: left;
+    width: 110px;
+    height: 120px;
+    background-color: white;
+    border-radius: 3%;
+    border: 1px solid #38abab;
+    line-height: 2;
+    display: none;
+}
+
+.drop-link {
+    margin-left: 10%;
+    transition: 0.3s;
+}
+
+.drop-link:hover {
+    color: #38abab;
+}
+
+.product:hover {
+    border-bottom: none;
+}
+
+.product:hover ~ .drop-down {
+    border-bottom: none;
+    display: block;
+}
+
+.drop-down:hover {
+    display: block;
+}
+
+.hover-product {
+    display: none;
+}
+
+.home {
+    margin-top: 70px;
+    transition: 0.5s;
+    color: white;
+}
+
+@media(max-width: 600px) {
+    .loginBtn {
+        background-color: #38abab;
+        display: block;
+    }
+
+    .loginBtn:hover {
+        opacity: 100%;
+    }
+
+    .white:hover {
+        border-bottom: 3px solid white;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        gap: 0;
+        flex-direction: column;
+        background-color: #38abab;
+        width: 100%;
+        text-align: center;
+        transition: 0.5s;
+        z-index: -1;
+    }
+
+    .nav-item {
+        margin: 12px 0;
+    }
+
+    .nav-link:hover {
+        border-bottom: 3px solid white;
+    }
+
+    a, .product {
+        color: white;
+    }
+
+    .nav-menu.active {
+        top: 71px;
+        box-shadow: 0px 1px 0px 0px rgb(172, 172, 172);
+    }
+
+    .product:hover {
+        border-bottom: 3px solid white;
+    }
+
+    .product:hover ~ .drop-down {
+        border-bottom: none;
+        display: none;
+    }
+    
+    .drop-down:hover {
+        display: none;
+    }
+
+    .hover-product.active {
+        display: block;
+        transition: 0.5s;
+        font-size: 12px;
+        margin: 2px;
+        opacity: 80%;
+    }
+
+    .home.active {
+        margin-top: 332px;
+    }
+
+    .home.activate {
+        margin-top: 398px;
+    }
+}
